@@ -7,7 +7,9 @@ class Card(models.Model):
     text = models.TextField()
     created_date = models.DateTimeField(default=timezone.now)
     published_date = models.DateTimeField(blank=True, null=True)
-    tipo_card = models.IntegerField()
+    tipo = models.IntegerField()
+    link = models.URLField(default="#")
+    imagem = models.URLField(default="#")
 
     def publish(self):
         self.published_date = timezone.now()

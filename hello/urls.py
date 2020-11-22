@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('blog.urls')),
     path('bender/', include('bender.urls')),
+    path('hoje/', include('hoje.urls')),
 ]

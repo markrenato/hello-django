@@ -1,0 +1,107 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Hoje</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="{% static 'css/hoje.css' %}">  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+		
+  <div class="row mt-5 mb-5"> 
+  	 <!-- card 1 -->
+    <div class="col-xs-12 col-sm-12 col-md-4 d-flex align-items-stretch mb-3">
+      <div class="card">
+	 <img class="card-img" src="{% static 'img/mark.jpg' %}">   
+	 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 449">
+            <path
+              d="M-6.84 362.89c28.01-16.38 76.91-39.23 136.86-38.95 14.79.07 54.58.26 97.9 16.84 11.73 4.49 21.07 9.17 40 14.74 13.84 4.07 35.91 10.42 64.22 11.58 21.61.89 38.04-1.61 62.11-5.26 12.27-1.86 27.49-4.66 54.74-8.42 8.4-1.16 17.9-2.4 30.53-2.11 11.83.28 21.61 1.79 28.42 3.16l1.05 96.85-519-1.05c1.06-29.13 2.12-58.25 3.17-87.38z"
+              fill="#fafafa" /></svg>     
+        <div class="card-content">
+          <h4>Boa tarde, Mark Renato</h4>
+          <span>Sábado, 21 de novembro de 2020</span>
+          
+        </div>
+      </div>
+    </div>
+  
+   	    
+    <!-- card 2 -->
+    <div class="col-xs-12 col-sm-12 col-md-4 d-flex align-items-stretch mb-3">
+      <div class="card">
+ <img class="card-img" src="https://img.imirante.com.br/2020/11/21/1605948828-49038541-810x471.jpeg">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 449">
+            <path
+              d="M-6.84 362.89c28.01-16.38 76.91-39.23 136.86-38.95 14.79.07 54.58.26 97.9 16.84 11.73 4.49 21.07 9.17 40 14.74 13.84 4.07 35.91 10.42 64.22 11.58 21.61.89 38.04-1.61 62.11-5.26 12.27-1.86 27.49-4.66 54.74-8.42 8.4-1.16 17.9-2.4 30.53-2.11 11.83.28 21.61 1.79 28.42 3.16l1.05 96.85-519-1.05c1.06-29.13 2.12-58.25 3.17-87.38z"
+              fill="#fafafa" /></svg>
+        <div class="card-content">
+          <h4>Debate Imirante / O Estado com as candidatas a vice-prefeita de São Luís ocorre nesta terça-feira</h4>
+          <span>imirante.com · 1h</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis enim ut tellus elementum sagittis vitae. Elementum eu facilisis sed odio. Commodo viverra maecenas accumsan lacus
+            vel facilisis. Duis sagittis ipsum.</p>
+          <a href="https://imirante.com/sao-luis/noticias/2020/11/21/debate-imirante-o-estado-com-as-candidatas-a-vice-prefeita-de-sao-luis-ocorre-nesta-terca-feira.shtml" target="blank_" class="bttn">Imirante</a>
+          <a href="#" class="bttn-lido">Lido</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- card 3 -->
+    <div class="col-xs-12 col-sm-12 col-md-4 d-flex align-items-stretch mb-3">
+      <div class="card" id="vg">
+   <img class="card-img" src="https://pbs.twimg.com/profile_banners/28273230/1601506283/1500x500">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 449">
+            <path
+              d="M-6.84 362.89c28.01-16.38 76.91-39.23 136.86-38.95 14.79.07 54.58.26 97.9 16.84 11.73 4.49 21.07 9.17 40 14.74 13.84 4.07 35.91 10.42 64.22 11.58 21.61.89 38.04-1.61 62.11-5.26 12.27-1.86 27.49-4.66 54.74-8.42 8.4-1.16 17.9-2.4 30.53-2.11 11.83.28 21.61 1.79 28.42 3.16l1.05 96.85-519-1.05c1.06-29.13 2.12-58.25 3.17-87.38z"
+              fill="#fafafa" /></svg>
+        <div class="card-content">
+          <h4>Twitter</h4>
+          <span>@VascodaGama · 3h</span>
+          <p>Já vai começar mais uma partida do @Vascobsoccer ao vivo no @SporTV! Vasco x Anchieta. #VascoDaGama</p>
+          <a href="https://twitter.com/VascodaGama/status/1329865416081088513" target="blank_" class="bttn">Twitter</a>
+          <a href="#" class="bttn-lido">Lido</a>
+          <button onclick="myFunction('vg')">Try it</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- card 3 -->
+    <div class="col-xs-12 col-sm-12 col-md-4 d-flex align-items-stretch mb-3">
+      <div class="card" id="jn">
+   <img class="card-img" src="https://1.bp.blogspot.com/-lj7bhLDTmXk/UWC8pUzC1CI/AAAAAAAAALQ/hMNIy6IkrkM/s1600/jovem_nerd_logo_nerdinho.jpg">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 449">
+            <path
+              d="M-6.84 362.89c28.01-16.38 76.91-39.23 136.86-38.95 14.79.07 54.58.26 97.9 16.84 11.73 4.49 21.07 9.17 40 14.74 13.84 4.07 35.91 10.42 64.22 11.58 21.61.89 38.04-1.61 62.11-5.26 12.27-1.86 27.49-4.66 54.74-8.42 8.4-1.16 17.9-2.4 30.53-2.11 11.83.28 21.61 1.79 28.42 3.16l1.05 96.85-519-1.05c1.06-29.13 2.12-58.25 3.17-87.38z"
+              fill="#fafafa" /></svg>
+        <div class="card-content">
+          <h4>Youtube</h4>
+          <span>Jovem Nerd · 5h</span>
+          <p><iframe width="100%" height="100%" src="https://www.youtube.com/embed/MFRSOA-JrIE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>          
+          <a href="#" class="bttn-lido" onclick="myFunction('jn')">Lido</a>
+          <button onclick="myFunction('jn')">Try it</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- partial -->
+
+<script>
+function myFunction(nomeDiv) {
+	
+  var x = document.getElementById(nomeDiv);
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }  
+}
+</script>
+  
+</body>
+</html>
