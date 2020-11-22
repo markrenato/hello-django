@@ -1,0 +1,54 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Hoje</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="{% static 'css/hoje.css' %}">  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+		
+  <div class="row mt-5 mb-5"> 
+  	 <!-- card 1 -->
+    <div class="col-xs-12 col-sm-12 col-md-4 d-flex align-items-stretch mb-3">
+      <div class="card">
+	 <img class="card-img" src="{% static 'img/mark.jpg' %}">   
+	 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 449">
+            <path
+              d="M-6.84 362.89c28.01-16.38 76.91-39.23 136.86-38.95 14.79.07 54.58.26 97.9 16.84 11.73 4.49 21.07 9.17 40 14.74 13.84 4.07 35.91 10.42 64.22 11.58 21.61.89 38.04-1.61 62.11-5.26 12.27-1.86 27.49-4.66 54.74-8.42 8.4-1.16 17.9-2.4 30.53-2.11 11.83.28 21.61 1.79 28.42 3.16l1.05 96.85-519-1.05c1.06-29.13 2.12-58.25 3.17-87.38z"
+              fill="#fafafa" /></svg>     
+        <div class="card-content">
+          <h4>{{ saudacao }}</h4>
+          <span>{{ hoje }}</span>
+          
+        </div>
+      </div>
+    </div>
+
+    {% block hoje %}
+    {% endblock %}
+
+  </div>
+</div>
+<!-- partial -->
+
+<script>
+  function marcarLido(nomeDiv) {
+	
+    var elDiv = document.getElementById(nomeDiv);
+    
+    if (elDiv.style.display === "none") {
+      elDiv.style.display = "block";
+    } else {
+      elDiv.style.display = "none";
+    }  
+  }
+</script>
+  
+</body>
+</html>
